@@ -15,9 +15,11 @@ clangStdenv.mkDerivation {
     llvmPackages_latest.lldb
     llvmPackages_latest.libllvm
     llvmPackages_latest.libstdcxxClang
-    # ccls
+
+    cmake-language-server
   ];
   buildInputs = [
+    cmake-language-server
     # clang
     ncurses
     llvmPackages_latest.libstdcxxClang
